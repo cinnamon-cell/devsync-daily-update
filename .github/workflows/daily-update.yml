@@ -2,8 +2,11 @@ name: Daily Repository Update
 
 on:
   schedule:
-    - cron: '15 3 * * *'  # Runs daily at 03:15 UTC (specific time)
+    - cron: '15 3 * * *'
   workflow_dispatch:
+
+permissions:
+  contents: write   # 👈 THIS FIXES PUSH FAILURE
 
 jobs:
   daily-commit:
