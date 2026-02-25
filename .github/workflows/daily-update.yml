@@ -1,4 +1,4 @@
-name: Daily Repository Update
+name: Daily Update - 23f3003410@ds.study.iitm.ac.in
 
 on:
   schedule:
@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write   # 👈 THIS FIXES PUSH FAILURE
+  contents: write
 
 jobs:
   daily-commit:
